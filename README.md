@@ -53,10 +53,10 @@ Returns:
 
 ``` Python
 {
-    'id': 123454321,               # id письма
-    'from': 'name@domein.com',     # email отправителя
-    'subject': 'theme',            # Тема письма
-    'date': '2021-10-19 17:25:38'  # Дата получения
+    'id': 123454321,               # email id
+    'from': 'name@domein.com',     # sender's email
+    'subject': 'theme',            # Subject of the letter
+    'date': '2021-10-19 17:25:38'  # Date of receipt
 }
 ```
 
@@ -76,21 +76,21 @@ Returns:
 
 ``` Python
 {
-    'id': 123454321,                # id письма
-    'from': 'name@domein.com',      # email отправителя
-    'subject': 'theme',             # Тема письма
-    'date': '2021-10-19 17:25:38',  # Дата получения
-    'attachments':                  # Список файлов приложенных к письму
+    'id': 123454321,                # email id
+    'from': 'name@domein.com',      # sender's email
+    'subject': 'theme',             # Subject of the letter
+    'date': '2021-10-19 17:25:38',  # Date of receipt
+    'attachments':                  # List of files attached to the letter
         [
             {
-                'filename': 'image.png',     # Название файла
-                'contentType': 'image/png',  # Тип файла
-                'size': 2048                 # Размер файла в килобайтах
+                'filename': 'image.png',     # File name
+                'contentType': 'image/png',  # File Type
+                'size': 2048                 # File size in kilobytes
             }
         ]
-    'body': '<p>Тело письма</p>',     # Тело сообщения (html, если существует, текст в противном случае), текст
-    'textBody': 'Тело письма'         # Тело сообщения (текст),
-    'htmlBody': '<p>Тело письма</p>'  # Тело сообщения (html)
+    'body': '<p>Тело письма</p>',     # Message body (html if exists, text otherwise)
+    'textBody': 'Тело письма'         # Message body (text)
+    'htmlBody': '<p>Тело письма</p>'  # Message body (html)
 }
 ```
 
@@ -123,7 +123,7 @@ Accepts:
 - The path to the folder where you want to download the file
 - If necessary, a new file name (by default swings with the old name)
 
-==Can't create folders, specify the path to an existing folder==
+**Can't create folders, specify the path to an existing folder**
 
 Downloads the file to the specified folder
 
@@ -217,8 +217,8 @@ letter = email.get_letter(let_id=123454321)
                 'size': 2048                 # Размер файла в килобайтах
             }
         ]
-    'body': '<p>Тело письма</p>',     # Тело сообщения (html, если существует, текст в противном случае), текст
-    'textBody': 'Тело письма'         # Тело сообщения (текст),
+    'body': '<p>Тело письма</p>',     # Тело сообщения (html, если существует, текст в противном случае)
+    'textBody': 'Тело письма'         # Тело сообщения (текст)
     'htmlBody': '<p>Тело письма</p>'  # Тело сообщения (html)
 }
 ```
