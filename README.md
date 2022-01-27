@@ -1,4 +1,4 @@
-(Below in Russian)
+<a href="#rus_vers">(На русском)</a>
 # OneSecMail - Create a one-time mail to receive the message
 
 ## Get a list of available domains
@@ -128,6 +128,8 @@ Accepts:
 Downloads the file to the specified folder
 
 ---
+<div hide='true', id='rus_vers'></div>
+
 # OneSecMail - Создайте одноразовую почту
 
 ## Получите список доступных доменов
@@ -252,6 +254,6 @@ email.download_attachment(let_id=123454321, file='image.png', path='C:/', new_na
 - Путь к папке, куда надо скачать файл
 - Если надо, новое название файла (по умолчанию скачается со старым названием)
 
-==Не может создавать папки, указывайте путь к существующей папке==
+**Не может создавать папки, указывайте путь к существующей папке**
 
 Скачивает файл в указанную папку
